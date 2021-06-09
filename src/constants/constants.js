@@ -16,6 +16,15 @@ export const Icons = {
     eye: require('../assets/icons/876769.png'),
     cut: require('../assets/icons/cut.png'),
 
+    clock: require('../assets/icons/clock-circular-outline.png'),
+    delete: require('../assets/icons/delete.png'),
+
+    heartbeat: require('../assets/icons/heartbeat.png'),
+    hospital: require('../assets/icons/hospital.png'),
+    notification: require('../assets/icons/notification.png'),
+    magnify: require('../assets/icons/magnifying-glass.png'),
+
+
 }
 
 

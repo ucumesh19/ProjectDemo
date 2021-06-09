@@ -1,11 +1,10 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import SignUp from './components/AuthScreen/SignUp';
-import Sign from './components/AuthScreen/Sign';
+import AppNavigation from '../src/components/routing/AppNavigation';
+import Notifications from '../src/components/AuthScreen/Notifications'
 
 const App = () => {
   return (
-    <SignUp />
+    <AppNavigation />
   )
 }
 
