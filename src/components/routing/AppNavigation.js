@@ -4,6 +4,7 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import Sign from '../AuthScreen/Sign';
 import SignUp from '../AuthScreen/SignUp';
 import SwipeList from '../AuthScreen/SwipeList';
+import Profile from '../AuthScreen/Profile';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -19,6 +20,7 @@ const AppTab = () => {
         <Tab.Navigator
             initialRouteName={Notifications}
             tabBarOptions={{
+                showLabel: false,
                 style: {
                     backgroundColor: "#FFFFFF",
                     height: hpx(56),
@@ -134,8 +136,10 @@ const AppNavigation = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
-                <Stack.Screen name="AppTab" component={AppTab} />
+                {/* <Stack.Screen name="AppTab" component={AppTab} /> */}
+                <Stack.Screen name="Profile" component={Profile} />
                 <Stack.Screen name="Notifcations" component={Notifications} />
+                <Stack.Screen name="SignUp" component={SignUp} />
             </Stack.Navigator>
         </NavigationContainer>
     );
@@ -146,7 +150,7 @@ const styles = StyleSheet.create({
     tabContainer: {
         alignItems: "center",
         justifyContent: "center",
-        top: 10
+        top: 5
     }
 
 })

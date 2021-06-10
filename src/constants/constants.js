@@ -24,9 +24,16 @@ export const Icons = {
     notification: require('../assets/icons/notification.png'),
     magnify: require('../assets/icons/magnifying-glass.png'),
 
+    heart: require('../assets/icons/heart.png'),
+    clinic_logo: require('../assets/icons/clinic-logo-png-8.png'),
+
 
 }
 
+//Images
+export const Images = {
+    doctor: require('../assets/images/sad-pensive-doctor-staying-in-hospital-corridor-KJW3XA7.png'),
+}
 
 //FONT SCALING
 //Usage: nf(16)
