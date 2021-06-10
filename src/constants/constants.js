@@ -26,6 +26,9 @@ export const Icons = {
 
     heart: require('../assets/icons/heart.png'),
     clinic_logo: require('../assets/icons/clinic-logo-png-8.png'),
+    features: require('../assets/icons/features.png'),
+    back: require('../assets/icons/back.png'),
+
 
 
 }
