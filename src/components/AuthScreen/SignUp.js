@@ -147,8 +147,7 @@ const styles = StyleSheet.create({
     patientText: {
         fontSize: nf(14),
         color: "#180334",
-        fontWeight: "bold",
-        fontFamily: "Roboto",
+        fontFamily: "Roboto-Bold",
         textAlign: 'right',
         marginTop: hpx(10),
         marginRight: wpx(28)

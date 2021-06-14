@@ -5,6 +5,8 @@ import Sign from '../AuthScreen/Sign';
 import SignUp from '../AuthScreen/SignUp';
 import SwipeList from '../AuthScreen/SwipeList';
 import Profile from '../AuthScreen/Profile';
+import Messages from '../AuthScreen/Messages';
+import Msgs from '../AuthScreen/Msgs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -43,7 +45,7 @@ const AppTab = () => {
                                     tintColor: focused ? "#606060" : "#C1C1C1"
                                 }}
                             />
-                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9 }} >Home/Search</Text>
+                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9, fontFamily: "Roboto-Regular" }} >Home/Search</Text>
                         </View>
                     ),
                 }}
@@ -62,14 +64,14 @@ const AppTab = () => {
                                     tintColor: focused ? "#606060" : "#C1C1C1"
                                 }}
                             />
-                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9 }} >MyClinic</Text>
+                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9, fontFamily: "Roboto-Regular" }} >MyClinic</Text>
                         </View>
                     ),
                 }}
             />
             <Tab.Screen
-                name="Sign"
-                component={Sign}
+                name="Profile"
+                component={Profile}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.tabContainer}>
@@ -81,7 +83,7 @@ const AppTab = () => {
                                     tintColor: focused ? "#606060" : "#C1C1C1"
                                 }}
                             />
-                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9 }} >Favourite Doctor/Clinic</Text>
+                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9, fontFamily: "Roboto-Regular" }} >Favourite Doctor/Clinic</Text>
                         </View>
                     ),
                 }}
@@ -100,7 +102,7 @@ const AppTab = () => {
                                     tintColor: focused ? "#606060" : "#C1C1C1"
                                 }}
                             />
-                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9 }} >Notification</Text>
+                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9, fontFamily: "Roboto-Regular" }} >Notification</Text>
                         </View>
                     ),
                     // tabBarLabel: "Notification"
@@ -108,8 +110,8 @@ const AppTab = () => {
             />
 
             <Tab.Screen
-                name="SwipeList"
-                component={SwipeList}
+                name="Messages"
+                component={Messages}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.tabContainer}>
@@ -121,7 +123,7 @@ const AppTab = () => {
                                     tintColor: focused ? "#606060" : "#C1C1C1"
                                 }}
                             />
-                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9 }} >My Account</Text>
+                            <Text style={{ color: focused ? "#606060" : "#C1C1C1", fontSize: 9, fontFamily: "Roboto-Regular" }} >My Account</Text>
                         </View>
                     ),
                 }}
@@ -136,7 +138,9 @@ const AppNavigation = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
-                {/* <Stack.Screen name="AppTab" component={AppTab} /> */}
+                <Stack.Screen name="Msgs" component={Msgs} />
+                <Stack.Screen name="Messages" component={Messages} />
+                <Stack.Screen name="AppTab" component={AppTab} />
                 <Stack.Screen name="Profile" component={Profile} />
                 <Stack.Screen name="Notifcations" component={Notifications} />
                 <Stack.Screen name="SignUp" component={SignUp} />

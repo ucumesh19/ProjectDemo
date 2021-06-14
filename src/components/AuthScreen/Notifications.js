@@ -119,14 +119,13 @@ const styles = StyleSheet.create({
         marginVertical: hpx(12)
     },
     titleText: {
-        fontFamily: "Roboto",
+        fontFamily: "Roboto-Bold",
         fontSize: nf(21),
-        fontWeight: "bold",
         color: "#606060"
 
     },
     messageText: {
-        fontFamily: "Roboto",
+        fontFamily: "Roboto-Regular",
         fontSize: nf(13),
         color: "#C6C6C6"
 
@@ -138,7 +137,7 @@ const styles = StyleSheet.create({
         marginTop: hpx(6)
     },
     durationText: {
-        fontFamily: "Roboto",
+        fontFamily: "Roboto-Regular",
         fontSize: nf(12),
         color: "#5D5D5D",
         marginLeft: wpx(2)

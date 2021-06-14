@@ -36,6 +36,7 @@ export const Icons = {
 //Images
 export const Images = {
     doctor: require('../assets/images/sad-pensive-doctor-staying-in-hospital-corridor-KJW3XA7.png'),
+    image: require('../assets/images/image.png'),
 }
 
 //FONT SCALING

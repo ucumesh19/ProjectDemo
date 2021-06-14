@@ -26,10 +26,12 @@ const styles = StyleSheet.create({
     head1: {
         fontSize: nf(20),
         color: "#606060",
+        fontFamily: "Roboto-Regular"
     },
     head2: {
         fontSize: nf(12),
         color: "#606060",
+        fontFamily: "Roboto-Bold"
     }
 })
 

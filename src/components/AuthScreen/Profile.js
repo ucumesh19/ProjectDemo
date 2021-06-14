@@ -43,14 +43,16 @@ const Profile = () => {
                 </View>
 
                 <View style={styles.viewLogoContainer}>
-                    <View style={{ flexDirection: "column" }}>
-                        <Text style={styles.containerFirstText}>National center , Riyadh</Text>
-                        <Text style={styles.containerSecondText}>Call: 011-54-55412</Text>
-                    </View>
-                    <View style={{ flexDirection: "row", marginLeft: wpx(30), marginTop: hpx(4) }}>
-                        <Text style={{ fontSize: nf(17), fontFamily: "Roboto-Medium", color: "#6D52E1" }} >Clinic</Text>
-                        <Image source={Icons.clinic_logo} />
-                        <Text style={{ fontSize: nf(17), fontFamily: "Roboto-Medium", color: "#6D52E1" }} >Logo</Text>
+                    <View style={{ flexDirection: "row", flex: 0.5 }}>
+                        <View style={{ flexDirection: "column" }}>
+                            <Text style={styles.containerFirstText}>National center , Riyadh</Text>
+                            <Text style={styles.containerSecondText}>Call: 011-54-55412</Text>
+                        </View>
+                        <View style={{ flexDirection: "row", paddingLeft: wpx(28), paddingTop: hpx(4) }}>
+                            <Text style={{ fontSize: nf(17), fontFamily: "Roboto-Medium", color: "#6D52E1" }} >Clinic</Text>
+                            <Image source={Icons.clinic_logo} />
+                            <Text style={{ fontSize: nf(17), fontFamily: "Roboto-Medium", color: "#6D52E1" }} >Logo</Text>
+                        </View>
                     </View>
                 </View>
 
