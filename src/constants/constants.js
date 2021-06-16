@@ -29,7 +29,8 @@ export const Icons = {
     features: require('../assets/icons/features.png'),
     back: require('../assets/icons/back.png'),
 
-
+    upload: require('../assets/icons/upload.png'),
+    deleteP: require('../assets/icons/deleteP.png'),
 
 }
 

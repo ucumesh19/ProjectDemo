@@ -7,6 +7,7 @@ import SwipeList from '../AuthScreen/SwipeList';
 import Profile from '../AuthScreen/Profile';
 import Messages from '../AuthScreen/Messages';
 import Msgs from '../AuthScreen/Msgs';
+import CameraProfile from '../AuthScreen/CameraProfile';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -32,8 +33,8 @@ const AppTab = () => {
             }}
         >
             <Tab.Screen
-                name="Home"
-                component={Home}
+                name="CameraProfile"
+                component={CameraProfile}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.tabContainer}>
@@ -110,8 +111,8 @@ const AppTab = () => {
             />
 
             <Tab.Screen
-                name="Messages"
-                component={Messages}
+                name="Msgs"
+                component={Msgs}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={styles.tabContainer}>
@@ -138,9 +139,11 @@ const AppNavigation = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
+                {/* <Stack.Screen name="AppTab" component={AppTab} /> */}
+                <Stack.Screen name="CameraProfile" component={CameraProfile} />
                 <Stack.Screen name="Msgs" component={Msgs} />
                 <Stack.Screen name="Messages" component={Messages} />
-                <Stack.Screen name="AppTab" component={AppTab} />
+
                 <Stack.Screen name="Profile" component={Profile} />
                 <Stack.Screen name="Notifcations" component={Notifications} />
                 <Stack.Screen name="SignUp" component={SignUp} />
